@@ -1,2 +1,7 @@
 /config.h
 /Makefile
+/org/
+/*.o
+/*.so
+/*.jar
+/org_rosuda_JRI_Rengine.h

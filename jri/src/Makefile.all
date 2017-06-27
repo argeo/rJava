@@ -11,7 +11,8 @@ all: $(TARGETS)
 
 JRI.jar: $(JRI_JSRC) $(JNIPREFIX)jri$(JNISO)
 	$(JAVAC) $(JFLAGS) -d . $(JRI_JSRC)
-	$(JAR) fc $@ org $(JNIPREFIX)jri$(JNISO)
+	cp -v ../*.java ./org/rosuda/JRI
+	$(JAR) mfc MANIFEST.MF $@ org $(JNIPREFIX)jri$(JNISO)
 
 org_rosuda_JRI_Rengine.h: org/rosuda/JRI/Rengine.class
 	$(JAVAH) -d . -classpath . org.rosuda.JRI.Rengine

@@ -1,7 +1,16 @@
  NEWS/ChangeLog for rJava
 --------------------------
 
-0.9-8	(under development)
+0.9-9	(under development)
+    o	add support for --disable-Xrs configure option in case java -Xrs
+	is so broken that it cannot even be tested - reportedly the case
+	with Docker (see #63).
+
+    o	add optional class.loader= argument to .jnew() which allows to
+	use a custom loader in special cases.
+
+
+0.9-8	2016-01-06
     o	Work around a bug on Oracle's Java on OS X by pre-loading jli
 
     o	Work around DYLD_FALLBACK_LIBRARY_PATH being dropped in OS X 10.11

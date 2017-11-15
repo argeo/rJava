@@ -1,4 +1,4 @@
-package org.rosuda.JRI;
+package org.rosuda.jri;
 
 // JRclient library - client interface to Rserve, see http://www.rosuda.org/Rserve/
 // Copyright (C) 2004 Simon Urbanek

@@ -6,7 +6,7 @@
 #include "Rdecl.h"
 #include "Rcallbacks.h"
 
-#include "org_rosuda_JRI_Rengine.h"
+#include "org_rosuda_jri_Rengine.h"
 #include <R_ext/Parse.h>
 
 #ifndef Win32

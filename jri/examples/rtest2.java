@@ -3,10 +3,10 @@ import java.io.*;
 import java.awt.*;
 import javax.swing.*;
 
-import org.rosuda.JRI.Rengine;
-import org.rosuda.JRI.REXP;
-import org.rosuda.JRI.RMainLoopCallbacks;
-import org.rosuda.JRI.RConsoleOutputStream;
+import org.rosuda.jri.Rengine;
+import org.rosuda.jri.REXP;
+import org.rosuda.jri.RMainLoopCallbacks;
+import org.rosuda.jri.RConsoleOutputStream;
 
 class TextConsole2 implements RMainLoopCallbacks
 {

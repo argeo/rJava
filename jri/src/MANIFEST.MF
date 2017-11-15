@@ -1,5 +1,0 @@
-Bundle-SymbolicName: org.rosuda.JRI;singleton:=true
-Bundle-Version: 0.9.9.D20170627
-Export-Package: org.rosuda.JRI
-Bundle-NativeCode: libjri.so;osname=Linux;processor=x86-64,
- libjri.dylib;osname=Mac OSX;processor=x86;processor=x86-64

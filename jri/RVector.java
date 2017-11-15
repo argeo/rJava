@@ -1,4 +1,4 @@
-package org.rosuda.JRI;
+package org.rosuda.jri;
 
 import java.util.Vector;
 import java.util.Enumeration;

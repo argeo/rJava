@@ -4,11 +4,11 @@ import java.awt.FileDialog;
 
 import java.util.Enumeration;
 
-import org.rosuda.JRI.Rengine;
-import org.rosuda.JRI.REXP;
-import org.rosuda.JRI.RList;
-import org.rosuda.JRI.RVector;
-import org.rosuda.JRI.RMainLoopCallbacks;
+import org.rosuda.jri.Rengine;
+import org.rosuda.jri.REXP;
+import org.rosuda.jri.RList;
+import org.rosuda.jri.RVector;
+import org.rosuda.jri.RMainLoopCallbacks;
 
 class TextConsole implements RMainLoopCallbacks
 {

@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.rosuda.jri;singleton:=true
+Export-Package: org.rosuda.jri
+Bundle-Version: 0.9.9.D20170915

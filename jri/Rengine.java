@@ -1,4 +1,4 @@
-package org.rosuda.JRI;
+package org.rosuda.jri;
 
 import java.lang.*;
 
@@ -103,7 +103,7 @@ public class Rengine extends Thread {
     /** create and start a new instance of R. 
 	@param args arguments to be passed to R. Please note that R requires the presence of certain arguments (e.g. <code>--save</code> or <code>--no-save</code> or equivalents), so passing an empty list usually doesn't work.
 	@param runMainLoop if set to <code>true</code> the the event loop will be started as soon as possible, otherwise no event loop is started. Running loop requires <code>initialCallbacks</code> to be set correspondingly as well.
-	@param initialCallbacks an instance implementing the {@link org.rosuda.JRI.RMainLoopCallbacks RMainLoopCallbacks} interface that provides methods to be called by R
+	@param initialCallbacks an instance implementing the {@link org.rosuda.jri.RMainLoopCallbacks RMainLoopCallbacks} interface that provides methods to be called by R
     */
     public Rengine(String[] args, boolean runMainLoop, RMainLoopCallbacks initialCallbacks) {
         super();

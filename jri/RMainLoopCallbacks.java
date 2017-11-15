@@ -1,4 +1,4 @@
-package org.rosuda.JRI;
+package org.rosuda.jri;
 
 /** Interface which must be implmented by any class that wants to pose as the call-back handler for R event loop callbacks. It is legal to return immediately except when user interaction is required: {@link #rReadConsole} and {@link #rChooseFile} are expected to block until the user performs the desired action. */
 public interface RMainLoopCallbacks {

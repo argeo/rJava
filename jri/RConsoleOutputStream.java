@@ -4,7 +4,7 @@
 //
 // For licensing terms see LICENSE in the root if the JRI distribution
 
-package org.rosuda.JRI;
+package org.rosuda.jri;
 
 import java.io.OutputStream;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package org.rosuda.JRI;
+package org.rosuda.jri;
 
 /** This class implements a (not so) simple mutex. The initial state of the mutex is unlocked. */
 public class Mutex {

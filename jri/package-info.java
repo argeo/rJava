@@ -1,5 +1,5 @@
 /** 
  * low level Java/R Interface
  */
-package org.rosuda.JRI ;
+package org.rosuda.jri ;
 

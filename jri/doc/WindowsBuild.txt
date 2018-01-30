@@ -1,0 +1,8 @@
+# install RTools (R build environment)
+set PATH=%PATH%;c:\Rtools\bin;c:\Rtools\gcc-4.6.3\bin
+set R_HOME=C:\R\R-3.4.2
+set R_ARCH=/x64
+
+# in the jri directory:
+sh configure.win
+make

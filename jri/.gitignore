@@ -4,6 +4,7 @@
 /run
 /*.so
 /*.dll
+/*.jnilib
 /bin/
 /run.bat
 /target/

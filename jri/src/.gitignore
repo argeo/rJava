@@ -6,3 +6,5 @@
 /*.jar
 /org_rosuda_JRI_Rengine.h
 /org_rosuda_jri_Rengine.h
+/*.dll
+/Makefile.wconf

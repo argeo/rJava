@@ -1,0 +1,139 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.argeo.tp.rjava</groupId>
+	<artifactId>org.rosuda.jri</artifactId>
+	<packaging>jar</packaging>
+	<name>JRI Java-R bridge</name>
+	<version>0.9.9-SNAPSHOT</version>
+	<scm>
+		<connection>scm:git:https://github.com/argeo/rJava.git/jri</connection>
+		<developerConnection>scm:git:https://github.com/argeo/rJava.git/jri</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+	<licenses>
+		<license>
+			<name>LGPL</name>
+			<url>https://www.gnu.org/licenses/lgpl.txt</url>
+			<distribution>repo</distribution>
+			<comments><![CDATA[
+                   GNU LESSER GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+
+  This version of the GNU Lesser General Public License incorporates
+the terms and conditions of version 3 of the GNU General Public
+License, supplemented by the additional permissions listed below.
+
+]]>
+			</comments>
+		</license>
+	</licenses>
+	<build>
+		<extensions>
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-webdav-jackrabbit</artifactId>
+				<version>2.10</version>
+			</extension>
+		</extensions>
+		<sourceDirectory>src</sourceDirectory>
+		<resources>
+			<resource>
+				<directory>.</directory>
+				<includes>
+					<include>lib/**</include>
+				</includes>
+			</resource>
+		</resources>
+		<testResources>
+			<testResource>
+				<directory>ext/test</directory>
+				<includes>
+					<include>**</include>
+				</includes>
+				<excludes>
+					<exclude>**/*.java</exclude>
+				</excludes>
+			</testResource>
+		</testResources>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.3</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<compilerId>eclipse</compilerId>
+					<!-- Required for compliance level, see http://jira.codehaus.org/browse/PLXCOMP-231 -->
+					<optimize>true</optimize>
+					<!-- Hack to work around issues with generated annotations : -->
+					<generatedSourcesDirectory>target/classes</generatedSourcesDirectory>
+					<generatedTestSourcesDirectory>target/test-classes</generatedTestSourcesDirectory>
+				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>org.codehaus.plexus</groupId>
+						<artifactId>plexus-compiler-eclipse</artifactId>
+						<version>2.6</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+			<plugin>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>2.4</version>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<phase>package</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<excludes>
+						<!-- Prevents source jars to contain misleading data -->
+						<exclude>plugin.xml</exclude>
+						<exclude>META-INF/MANIFEST.MF</exclude>
+					</excludes>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.18</version>
+			</plugin>
+			<plugin>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.5</version>
+				<configuration>
+					<archive>
+						<manifestFile>META-INF/MANIFEST.MF</manifestFile>
+					</archive>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.7</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.5.1</version>
+			</plugin>
+		</plugins>
+	</build>
+	<distributionManagement>
+		<repository>
+			<id>staging</id>
+			<url>dav:https://forge.argeo.org/data/java/argeo-extras-2.1/</url>
+			<uniqueVersion>false</uniqueVersion>
+		</repository>
+	</distributionManagement>
+</project>

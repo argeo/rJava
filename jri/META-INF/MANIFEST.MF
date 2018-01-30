@@ -1,4 +1,12 @@
 Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
 Bundle-SymbolicName: org.rosuda.jri;singleton:=true
 Export-Package: org.rosuda.jri
-Bundle-Version: 0.9.9.D20170915
+Bundle-Version: 0.9.9.D20180130
+Bundle-NativeCode: lib/libjri.so;osname=linux;processor=x86-64,
+ lib/libjri.dylib;osname=Mac OSX;processor=x86;processor=x86-64,
+ lib/jri.dll;osname=win32;processor=x86-64,
+ lib/x86/jri.dll;osname=win32;processor=x86,
+ *
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"

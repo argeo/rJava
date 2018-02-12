@@ -7,8 +7,8 @@
 	<name>JRI Java-R bridge</name>
 	<version>0.3.1-SNAPSHOT</version>
 	<scm>
-		<connection>scm:git:https://github.com/argeo/rJava.git/jri</connection>
-		<developerConnection>scm:git:https://github.com/argeo/rJava.git/jri</developerConnection>
+		<connection>scm:git:https://github.com/argeo/rJava.git</connection>
+		<developerConnection>scm:git:https://github.com/argeo/rJava.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 	<licenses>

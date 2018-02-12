@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-SymbolicName: org.rosuda.jri;singleton:=true
 Export-Package: org.rosuda.jri
-Bundle-Version: 0.3.1.D20180130
+Bundle-Version: 0.3.1.R20180212
 Bundle-NativeCode: lib/libjri.so;osname=linux;processor=x86-64,
  lib/libjri.jnilib;osname=MacOSX;processor=x86-64,
  lib/jri.dll;osname=win32;processor=x86-64,

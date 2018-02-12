@@ -5,7 +5,7 @@
 	<artifactId>org.rosuda.jri</artifactId>
 	<packaging>jar</packaging>
 	<name>JRI Java-R bridge</name>
-	<version>0.9.9-SNAPSHOT</version>
+	<version>0.3.1-SNAPSHOT</version>
 	<scm>
 		<connection>scm:git:https://github.com/argeo/rJava.git/jri</connection>
 		<developerConnection>scm:git:https://github.com/argeo/rJava.git/jri</developerConnection>

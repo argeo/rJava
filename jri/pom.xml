@@ -1,15 +1,14 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.argeo.tp.rjava</groupId>
 	<artifactId>org.rosuda.jri</artifactId>
 	<packaging>jar</packaging>
 	<name>JRI Java-R bridge</name>
-	<version>0.3.1-SNAPSHOT</version>
+	<version>0.3.1</version>
 	<scm>
 		<connection>scm:git:https://github.com/argeo/rJava.git</connection>
 		<developerConnection>scm:git:https://github.com/argeo/rJava.git</developerConnection>
-		<tag>HEAD</tag>
+		<tag>org.rosuda.jri-0.3.1</tag>
 	</scm>
 	<licenses>
 		<license>
@@ -20,7 +19,7 @@
                    GNU LESSER GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
- Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org />
  Everyone is permitted to copy and distribute verbatim copies
  of this license document, but changing it is not allowed.
 
